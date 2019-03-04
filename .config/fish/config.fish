@@ -9,6 +9,7 @@ alias gbr="git branch"
 alias gco="git checkout"
 alias gpl="git pull"
 alias gps="git push"
+alias gcm="git commit -m "
 
 # Docker aliases
 alias dps="docker ps"
