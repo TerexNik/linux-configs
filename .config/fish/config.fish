@@ -1,29 +1,44 @@
-# Git aliases
+
+# System aliases
+alias r='ranger'
+alias ll='lsd -lha'
+
+# git aliases
 alias gst="git status"
 alias gbr="git branch"
 alias gco="git checkout"
 alias gpl="git pull"
 alias gps="git push"
 
+# Docker aliases
 alias dps="docker ps"
+alias dim="docker images"
+alias dprune="docker container prune -f && docker image prune -f"
 
+# Kubernetes mega aliases
 alias kmd="kubectl -n mega-dev"
 alias km="kubectl -n mega"
 
-alias weather="curl http://wttr.in/moscow"
+# java aliases
+alias projschemajava="mkdir -p src/{main,test}/{java,resources}"
 
-# Java aliases
-alias ProjSchemaJava="mkdir -p src/{main,test}/{java,resources}"
-
-#Dir aliases
+#dir aliases
 alias pj="cd ~/projects"
 
-# Exports
-export KUBECONFIG='/home/terekhin/.kube/config/mega-dev'
+# exports
+export kubeconfig='/home/terekhin/.kube/config/mega-dev'
 
-# Commands
+# Docker aliases
+alias dps='docker ps'
+alias dim='docker images'
 
-# Functions
+# Folder aliases
+alias pj='cd ~/projects'
+
+# Fun aliases
+alias weather="curl http://wttr.in/moscow"
+
+# functions
 function ll
-	ls -lha $argv
+    lsd -lha $argv
 end
