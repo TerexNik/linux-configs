@@ -30,7 +30,6 @@ set laststatus=2
 
 "ViewSettings
 set number
-set relativenumber
 syntax on
 colorscheme gruvbox
 set background=dark
