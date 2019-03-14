@@ -26,9 +26,12 @@ alias projschemajava="mkdir -p src/{main,test}/{java,resources}"
 
 #dir aliases
 alias pj="cd ~/projects"
+alias md="cd ~/projects/mobile-dimension/backend"
 
 # exports
 export KUBECONFIG=/home/terekhin/.kube/config/mega-dev
+export JAVA_HOME=/home/terekhin/java
+export theme_color_scheme=zenburn
 
 #Kubectl
 alias goDev='export KUBECONFIG=/home/terekhin/.kube/config/mega-dev'
