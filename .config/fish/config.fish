@@ -29,8 +29,7 @@ alias pj="cd ~/projects"
 alias md="cd ~/projects/mobile-dimension/backend"
 
 # exports
-export KUBECONFIG=/home/terekhin/.kube/config/mega-dev
-export JAVA_HOME=/home/terekhin/java
+export KUBECONFIG=/home/nterehin/.kube/config/mega-dev
 export theme_color_scheme=zenburn
 
 #Kubectl
