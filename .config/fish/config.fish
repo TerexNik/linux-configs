@@ -2,6 +2,7 @@
 alias r='ranger'
 alias ll='lsd -la'
 alias fishUpdate='cp ~/linux-configs/.config/fish/config.fish ~/.config/fish/config.fish; source ~/.config/fish/config.fish'
+alias updateMirrorListAndSystem='sudo pacman-mirrors --fasttrack && sudo pacman -Syyu'
 
 # git aliases
 alias gst="git status"
