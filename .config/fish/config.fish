@@ -10,7 +10,7 @@ alias gbr="git branch"
 alias gco="git checkout"
 alias gpl="git pull"
 alias gps="git push"
-alias gaa="git add . "
+alias gaa="git add ."
 alias gcm="git commit -m "
 
 # Docker aliases
@@ -31,7 +31,7 @@ alias md="cd ~/projects/mobile-dimension/backend"
 
 # exports
 export KUBECONFIG=/home/nterehin/.kube/config/mega-dev
-export theme_color_scheme=zenburn
+export theme_color_scheme=gruvbox
 
 #Kubectl
 alias goDev='export KUBECONFIG=/home/terekhin/.kube/config/mega-dev'
