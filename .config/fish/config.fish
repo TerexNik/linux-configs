@@ -1,8 +1,25 @@
+#
+#	 ________  __            __               ______                        ______   __ 
+#	/        |/  |          /  |             /      \                      /      \ /  |
+#	$$$$$$$$/ $$/   _______ $$ |____        /$$$$$$  |  ______   _______  /$$$$$$  |$$ |
+#	$$ |__    /  | /       |$$      \       $$ |  $$/  /      \ /       \ $$ |_ $$/ $$ |
+#	$$    |   $$ |/$$$$$$$/ $$$$$$$  |      $$ |      /$$$$$$  |$$$$$$$  |$$   |    $$ |
+#	$$$$$/    $$ |$$      \ $$ |  $$ |      $$ |   __ $$ |  $$ |$$ |  $$ |$$$$/     $$/ 
+#	$$ |      $$ | $$$$$$  |$$ |  $$ |      $$ \__/  |$$ \__$$ |$$ |  $$ |$$ |       __ 
+#	$$ |      $$ |/     $$/ $$ |  $$ |      $$    $$/ $$    $$/ $$ |  $$ |$$ |      /  |
+#	$$/       $$/ $$$$$$$/  $$/   $$/        $$$$$$/   $$$$$$/  $$/   $$/ $$/       $$/ 
+#                                                                                    
+
+# add scripts to path need to run from shell not from config
+# set -U fish_user_paths /usr/local/scripts/ $fish_user_paths
+
 # System aliases
 alias r='ranger'
 alias ll='lsd -la'
+alias SS='sudo systemctl'
+alias p='sudo pacman'
+
 alias fishUpdate='cp ~/linux-configs/.config/fish/config.fish ~/.config/fish/config.fish; source ~/.config/fish/config.fish'
-alias updateMirrorListAndSystem='sudo pacman-mirrors --fasttrack && sudo pacman -Syyu'
 
 # git aliases
 alias gst="git status"
@@ -18,32 +35,26 @@ alias dps="docker ps"
 alias dim="docker images"
 alias dprune="docker container prune -f;  docker image prune -f"
 
-# Kubernetes mega aliases
-alias kmd="kubectl -n mega-dev"
-alias km="kubectl -n mega"
-
 # java aliases
 alias projschemajava="mkdir -p src/{main,test}/{java,resources}"
 
-#dir aliases
+# Folder/dir aliases
 alias pj="cd ~/projects"
 alias md="cd ~/projects/mobile-dimension/backend"
+alias mdi="cd ~/projects/mobile-dimension/infrastructure"
+alias sr="cd /usr/local/scripts"
 
-# exports
-export KUBECONFIG=/home/nterehin/.kube/config/mega-dev
+# Kuber exports
+export KUBECONFIG=$HOME/.kube/config/mega-dev
+
+# Java exports
+export JAVA_HOME=$HOME/.config/java
+
+# Linux shell exports
 export theme_color_scheme=gruvbox
 
-#Kubectl
-alias goDev='export KUBECONFIG=/home/terekhin/.kube/config/mega-dev'
-alias goProd='export KUBECONFIG=/home/terekhin/.kube/config/mega-prod'
-
-# Docker aliases
-alias dps='docker ps'
-alias dim='docker images'
-
-# Folder aliases
-alias pj='cd ~/projects'
-alias up='cd ../'
+# Go exports
+export GOPATH=$HOME/projects/nterehin/go
 
 # Fun aliases
 alias weather="curl http://wttr.in/moscow"
